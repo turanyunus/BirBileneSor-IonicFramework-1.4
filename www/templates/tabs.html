@@ -1,0 +1,35 @@
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+   <!-- Anasayfa Tab -->
+  <ion-tab title="Anasayfa" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/chats">
+    <ion-nav-view name="tab-chats"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Giriş Yap Tab -->
+  <ion-tab title="Giriş Yap" icon-off="ion-person-stalker" icon-on="ion-person-stalker" ng-if="user==null" ng-click="openModal('login')" >
+    <ion-nav-view name="tab-login"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Mesajlarım Tab -->
+  <ion-tab title="Mesajlarım" icon-off="ion-ios-email-outline" icon-on="ion-ios-email"   ng-if="user!=null" href="#/tab/mess">
+  <ion-nav-view name="tab-mess"></ion-nav-view> 
+  </ion-tab>
+
+  <!-- Kayıt Ol Tab -->
+  <ion-tab title="Kayıt Ol" icon-off="ion-person-add" icon-on="ion-person-add" ng-if="user==null" href="#/tab/register">
+    <ion-nav-view name="tab-register"></ion-nav-view>
+  </ion-tab>
+
+ <!-- Profil Tab -->
+  <ion-tab title="Profilim" icon-off="ion-happy-outline" icon-on="ion-happy" ng-if="user!=null" href="#/tab/info"> 
+  <ion-nav-view name="tab-info"></ion-nav-view> 
+  
+ </ion-tabs>
+
+
+
+
+ 
+
+    
+     

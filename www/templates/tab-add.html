@@ -1,0 +1,34 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-calm">
+     <h1 class="title">Post Ekle</h1>
+    <div class="buttons">
+      <button class="button button-clear" style="color:#FFF;" ng-click="closeAdd('add')">Kapat</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+
+     <form class="formGiris">
+      <div class="list">
+
+         <div class="item item-image">
+           <img ng-src="{{image}}" ng-click="takePicture()" > 
+         </div> 
+
+         <label class="item item-input">
+         <i class="icon ion-person placeholder-icon"></i>
+          <input type="text" placeholder="Kullanıcı Adı veya Email">
+        </label>
+
+         <label class="item item-input">
+           <i class="icon ion-locked placeholder-icon"></i>
+           <input type="text" placeholder="Şifre">
+         </label>
+
+        <label class="item">
+          <button class="button button-full button-calm" >
+            Ekle</button>
+        </label>
+      </div>
+    </form>
+ </ion-content>
+</ion-modal-view>

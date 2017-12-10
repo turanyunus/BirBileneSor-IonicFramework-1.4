@@ -1,0 +1,54 @@
+<ion-view title="BirGiyeneSor">
+    <ion-nav-buttons side="right">
+          <button class="button button-icon button-clear ion-log-out" ng-click="logout()">
+          </button>
+       </ion-nav-buttons>
+    <ion-content scroll="false">
+    <ion-slides  options="options" slider="data.slider">
+    <ion-slide-page>
+      <div class="box blue">
+          <div class="bar bar-header bar-light">
+            <h1 class="title">Profilim</h1>
+          </div>
+      </div>
+
+      <div class="list card" style="margin-top:50px;">
+
+      <div class="item item-avatar">
+        <img src="https://cdn3.iconfinder.com/data/icons/user-avatars-1/512/users-10-3-128.png" style="max-height:90px; max-width:110px;">
+        <div style="padding-left:65px;">
+          <h2>{{username}}</h2>
+          <p>{{name}}</p>
+          <p>{{sifre}}</p>
+          <p>{{id}}</p>
+          <p><img style="max-height:20px; max-width:25px;" ng-src="img/location.png" src="img/location.png">Konum</p>
+        </div>
+      </div>
+
+      <div class="item item-image">
+        <img ng-src="img/moda-cocuk.jpg" src="img/moda-cocuk.jpg">
+      </div>
+
+      <a class="item item-icon-left assertive" href="#">
+        <i class="icon ion-bag"></i>
+        Senin Tarzın
+      </a>
+
+</div>
+
+      
+    </ion-slide-page>
+    <ion-slide-page>
+      <div class="box yellow">
+          <div class="bar bar-header bar-light">
+          <h1 class="title">Gönderilerim</h1>
+</div>
+      </div>
+    </ion-slide-page>
+  </ion-slides>
+</ion-content>
+  
+</ion-view>
+
+
+

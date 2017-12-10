@@ -1,0 +1,34 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-calm">
+     <h1 class="title">Giriş</h1>
+    <div class="buttons">
+      <button class="button button-clear" style="color:#FFF;" ng-click="closeModal('login')">Kapat</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+
+     <form class="formGiris">
+      <div class="list">
+        <i class = "icon icon ion-person iconsgiris"></i>
+
+         <label class="item item-input">
+         <i class="icon ion-person placeholder-icon"></i>
+          <input type="text" placeholder="Kullanıcı Adı veya Email" ng-model="loginData.username">
+        </label>
+
+         <label class="item item-input">
+          <i class="icon ion-locked placeholder-icon"></i>
+          <input type="text" placeholder="Şifre" ng-model="loginData.password">
+        </label>
+
+        <label class="item">
+          <button class="button button-full button-calm" ng-click="doLogin()">Giriş Yap</button>
+        </label>
+      </div>
+    </form>
+    <label class="item" ng-click="closeModal('login2kayit')">
+      <a class="button button-full button-calm">Kayıt Ol</a>
+    </label>
+ </ion-content>
+</ion-modal-view>
+
